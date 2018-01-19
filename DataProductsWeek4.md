@@ -6,10 +6,10 @@ autosize: true
 
 
 
-Project Description
+Project Description (1)
 ========================================================
 This project is an extension of my previous *Leaflet* projects and uses an older dataset for [Starbucks Locations in the USA](https://gist.github.com/dankohn/09e5446feb4a8faea24f). The dataset was
-modified by adding a header row so *Leaflet* would recognize the latitude and longitude columns. The data classes and the first five rows, are shown below:
+modified by adding a header row so *Leaflet* would recognize the latitude and longitude columns. The data classes are shown below an the first five rows, are shown on the following slide.
 
 
 ```r
@@ -25,6 +25,9 @@ kable(strtable(df))
 |state     |Factor w/ 8902 levels |NA, ... |NA, ...                                                  |
 |address   |Factor w/ 8902 levels |NA, ... |NA, ...                                                  |
 
+Project Description (2)
+========================================================
+
 ```r
 kable(head(df,5))
 ```
@@ -38,7 +41,6 @@ kable(head(df,5))
 | -149.7522| 61.22970|Starbucks - AK - Anchorage  00003 |Elmendorf AFB_Bldg 5800 Westover Avenue_Anchorage, Alaska 99506                                 |
 | -149.8643| 61.19525|Starbucks - AK - Anchorage  00004 |Fred Meyer - Anchorage #11_1000 E Northern Lights Blvd_Anchorage, Alaska 995084283_907-264-9600 |
 | -149.8380| 61.13751|Starbucks - AK - Anchorage  00005 |Fred Meyer - Anchorage #656_2300 Abbott Road_Anchorage, Alaska 99507_907-365-2000               |
-
 
 The Shiny App
 =========================================================
