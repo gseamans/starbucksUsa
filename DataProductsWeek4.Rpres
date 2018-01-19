@@ -1,0 +1,62 @@
+Starbucks USA (Data Products Week 4)
+========================================================
+author: Gary R Seamans
+date: 19 January 2018
+autosize: true
+
+```{r setup, echo=FALSE}
+    library(knitr)
+    source("strtable.R")
+    df <- read.csv(file = "data/starbucks_us_locations.csv")
+```
+
+Project Description
+========================================================
+This project is an extension of my previous *Leaflet* projects and uses an older dataset for [Starbucks Locations in the USA](https://gist.github.com/dankohn/09e5446feb4a8faea24f). The dataset was
+modified by adding a header row so *Leaflet* would recognize the latitude and longitude columns. The data classes and the first five rows, are shown below:
+
+```{r}
+kable(strtable(df))
+kable(head(df,5))
+
+```
+
+
+The Shiny App
+=========================================================
+The Shiny app is hosted at: [Starbucks USA](https://gseamans.shinyapps.io/starbucksusa/) and has the following capabilities:
+
+- Select a state
+- Drill down
+- Show the address
+
+Using the Map (Select a State)
+========================================================
+In the left pane select the state to display. Once selected the map will redraw
+showing the **Starbucks** locations in that state.
+
+![Select a State](starbucks_1.png)
+
+
+Using the Map (Drill Down)
+========================================================
+Hovering over one of the circles with a number will highlight the area that contains the **Starbucks**. Clicking on the circle will 
+drill down into the area displaying addtional circles or individual **Starbucks** locations (Coffee Cups). As you drill down more map
+detail will be visible.
+
+![Select a State](starbucks_2.png)
+
+
+
+Using the Map (Show the Address)
+========================================================
+
+Clicking on one of the coffee cup icons will cause the address, and additional information, for that **Starbucks** to be displayed.
+
+![Select a State](starbucks_3.png)
+
+Summary
+========================================================
+
+This simple Shiny application is for all of those who are coffee addicts, like myself. It uses a freely available dataset. The *strtable()* function 
+used on the second slide was created by Jason Bryer [str Implementation for Data Frames](https://www.r-bloggers.com/str-implementation-for-data-frames/).

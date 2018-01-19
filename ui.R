@@ -11,7 +11,8 @@ ui <- shinyUI(pageWithSidebar(
             "select",
             label = h3("Select the State"),
             choices = setNames(as.character(sdf$abbr), as.character(sdf$state))),
-            div(style="text-align:center","Select the state to generate a map of Starbucks locations. The data is somewhat dated. You can scroll in/out and click on coffee cups to get the address.")
+            div(style="text-align:center","Select the state to generate a map of Starbucks locations. The data is somewhat dated. 
+                You can scroll in/out, drill down,  and click on coffee cups to get the address.")
     ),
     
     mainPanel(
