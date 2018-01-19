@@ -9,7 +9,7 @@ autosize: true
 Project Description (1)
 ========================================================
 This project is an extension of my previous *Leaflet* projects and uses an older dataset for [Starbucks Locations in the USA](https://gist.github.com/dankohn/09e5446feb4a8faea24f). The dataset was
-modified by adding a header row so *Leaflet* would recognize the latitude and longitude columns. The data classes are shown below an the first five rows, are shown on the following slide.
+modified by adding a header row so *Leaflet* would recognize the latitude and longitude columns. The data classes are shown below and the first five rows, are shown on the following slide.
 
 
 ```r
